@@ -1,0 +1,14 @@
+TCEA is distributed under two licenses, by material type:
+
+  * Source code — runtimes, conformance tooling, scripts, CI, and examples —
+    is licensed under the Apache License, Version 2.0. See LICENSE-CODE.
+
+  * The specification corpus — the RFC documents under spec/ and the prose
+    documentation under docs/ — is licensed under the Creative Commons
+    Attribution 4.0 International License (CC BY 4.0). See LICENSE-SPEC.
+
+The TCEA name and the TCEA certification mark are NOT licensed by either of the
+above and are reserved. See TRADEMARK.md and CERTIFICATION.md for permitted use.
+
+When a file's type is ambiguous, the license named in that file's header, or in
+the nearest README, governs.

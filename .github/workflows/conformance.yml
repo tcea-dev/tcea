@@ -1,0 +1,44 @@
+# TCEA conformance CI — STUB.
+#
+# This workflow is intentionally inert until the runtimes and golden vectors are
+# imported. It encodes the intended shape, including the F10 gate.
+#
+# Launch shape: PHASED (see CHANGELOG 2026-11-10). The `per-runtime` job is the
+# active check once runtimes are imported; the `cross-language` job stays DISABLED
+# until finding F10 is closed (v1.1.7), gated behind the `run-cross-language` input
+# so a red, known-failing check never sits on the default branch. Tracked in
+# ISSUE-F10.md. See conformance/README.md and SECURITY.md.
+
+name: conformance
+on:
+  workflow_dispatch:
+    inputs:
+      run-cross-language:
+        description: "Run the cross-language agreement job (requires F10 closed)"
+        type: boolean
+        default: false
+  # pull_request:        # enable once the harness exists
+  # push: { branches: [main] }
+
+jobs:
+  per-runtime:
+    name: single-runtime conformance (not F10-gated)
+    runs-on: ubuntu-latest
+    if: false   # flip to true once runtimes + vectors are imported
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Run each runtime against conformance/golden-vectors and assert pass."
+      # - go: cd runtimes/go && go test ./...
+      # - py: cd runtimes/python && pytest -q
+      # - rs: cd runtimes/rust && cargo test
+
+  cross-language:
+    name: cross-language agreement (F10-gated)
+    runs-on: ubuntu-latest
+    if: ${{ inputs.run-cross-language == true }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          echo "Assert Go/Python/Rust produce byte-identical canonical serializations"
+          echo "over a DOMAIN SCAN of conformance/golden-vectors — not a point test."
+          echo "This job is expected to FAIL until F10 (v1.1.7) is closed."
