@@ -7,7 +7,7 @@
 # active check once runtimes are imported; the `cross-language` job stays DISABLED
 # until finding F10 is closed (v1.1.7), gated behind the `run-cross-language` input
 # so a red, known-failing check never sits on the default branch. Tracked in
-# ISSUE-F10.md. See conformance/README.md and SECURITY.md.
+# issue #1 (github.com/tcea-dev/tcea/issues/1). See conformance/README.md and SECURITY.md.
 
 name: conformance
 on:
