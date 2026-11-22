@@ -14,7 +14,7 @@ the spirit of Keep a Changelog; the unit of record is the specification corpus f
 ### Decisions
 - 2026-11-10 — **Launch shape set to phased.** Publish spec, governance, and
   single-runtime material now, behind the Zenodo DOI; keep the cross-language
-  conformance job disabled, tracked in `ISSUE-F10.md`, until the v1.1.7
+  conformance job disabled, tracked in issue #1, until the v1.1.7
   reconciliation closes F10. Alternative considered: reconcile-first (close F10,
   then launch all-green at once) — set aside to avoid re-creating a "publish when
   perfect" hold while F10's fix is unstarted and toolchain-dependent. Reversible:
