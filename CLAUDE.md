@@ -24,7 +24,7 @@ recorded until run.
    relevant domain, or it is marked provisional.
 
 2. **No vacuous assertions.** A test whose assertion can pass without exercising
-   the property under test is not a test (finding F9: an `== <constant> or True`
+   the property under test is not a test (e.g. an ``== <constant> or True` ``
    assertion, plus a wrong constant). Assertions must be able to fail.
 
 3. **Status reflects execution, not intention.** A document may say PASSED,
