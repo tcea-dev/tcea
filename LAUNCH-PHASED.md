@@ -39,7 +39,7 @@ licensing, and an honest open-finding register — all behind the fresh DOI.
 
 ## Phase 3 — close the gate (v1.1.7)  [gated]
 
-12. **[gated]** Execute the v1.1.7 reconciliation per `ISSUE-F10.md`: one canonical
+12. **[gated]** Execute the v1.1.7 reconciliation per issue #1`: one canonical
     number/string form, all three runtimes brought to it, verified by a **domain
     scan**. Needs a local Go/Rust toolchain.
 13. **[gated]** Enable the cross-language conformance job; confirm green over the full
