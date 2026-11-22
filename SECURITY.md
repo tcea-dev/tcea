@@ -23,8 +23,7 @@ bytes, this blocks **cross-implementation receipt portability**.
   another. Cross-language conformance is therefore not yet claimed.
 - **Not affected:** single-runtime deployments. When one implementation computes
   every hash in a chain, there is no cross-language comparison to diverge, so the
-  chain is internally consistent. (This is why the MDR integration, which uses a
-  single Go governor, is unaffected.)
+  chain is internally consistent.
 - **Resolution:** the `v1.1.7` reconciliation defines one canonical number and
   string form and brings all three runtimes to it, under a domain scan rather than a
   point test. The cross-language conformance harness is gated on this fix.
