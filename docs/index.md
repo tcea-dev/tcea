@@ -24,6 +24,3 @@ Protocol and runtimes are open (Apache-2.0); the specification is CC BY 4.0; the
 TCEA certification mark is reserved. Anyone may implement and extend; only conforming
 implementations may claim certification.
 
----
-*GitHub Pages source for `github.com/tcea-dev/tcea` — enable Pages on the `tcea`
-repo, branch `main`, folder `/docs`.*
