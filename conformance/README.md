@@ -28,15 +28,16 @@ entire credibility.
 
 This project launches **phased**. The cross-language conformance job stays
 **disabled** until the `v1.1.7` reconciliation closes F10; the open finding is
-tracked (see [`ISSUE-F10.md`](../ISSUE-F10.md)) and disclosed in `../SECURITY.md`.
-Single-runtime conformance (one runtime against the vectors, no cross-language
-comparison) is **not** gated by F10 and is the active check at launch. When v1.1.7
-lands and the domain scan passes, the cross-language job is enabled and this note
-updated. Rationale and the alternative considered are recorded in `../CHANGELOG.md`.
+tracked in [#1](https://github.com/tcea-dev/tcea/issues/1) and disclosed in
+`../SECURITY.md`. Single-runtime conformance (one runtime against the vectors, no
+cross-language comparison) is **not** gated by F10 and is the active check at launch.
+When v1.1.7 lands and the domain scan passes, the cross-language job is enabled and
+this note updated. Rationale and the alternative considered are recorded in
+`../CHANGELOG.md`.
 
 ## Import checklist (before first push)
 
 - [ ] Import golden vectors from the ratified release.
 - [x] Launch shape decided: **phased** — cross-language job disabled pending F10,
-      tracked in `../ISSUE-F10.md`; single-runtime job is the active check.
+      tracked in issue #1; single-runtime job is the active check.
 - [ ] Each profile names its spec version, required surfaces, and pass criteria.
