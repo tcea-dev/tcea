@@ -21,8 +21,7 @@ handle is set · **[gated]** waits on v1.1.7 / F10.
 3. **[push]** Create the org and two repos: `tcea` (main) and `.github` (org profile).
 4. **[push]** Push this scaffold to `tcea`; push `profile/README.md` to `.github`.
 5. **[push]** Enable GitHub Pages on `tcea`: branch `main`, folder `/docs`.
-6. **[push]** Open the F10 tracking issue from `ISSUE-F10.md`; replace the
-   `ISSUE-F10.md` references with its real `#N`.
+6. **[done]** F10 tracking issue opened as #1; file references repointed to it.
 7. **[push]** Wire the Zenodo↔GitHub integration so tagged releases auto-archive with
    a version DOI under the paper's concept DOI (10.5281/zenodo.24057182).
 
